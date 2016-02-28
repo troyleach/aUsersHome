@@ -1,0 +1,44 @@
+<header class="top-header">
+  <div class="col-md-4 col-sm-4 mr-l"> <a href="javascript:void(0);" class="logo-mini"><img src="images/logo-mini.png" alt="Image" class="img-responsive" /></a> </div>
+  <!--col-md-4-->
+  <div class="col-md-5 col-sm-6 mr-r pull-right">
+    <div class="user-det"> <a href="javascript:void(0);"></a><br />
+      <div ng-controller="logoutCtrl">
+        <button class="btn-sm btn-warning" ng-click="logout()">Logout</button>
+      </div>
+    <!--user-det-->
+  </div>
+  <!--col-md-4-->
+  <div class="clearfix"></div>
+  <!--clearfix--> 
+</header>
+
+<div id="hub-container">
+  <div class="row">
+    <div class="col-md-2 menu-bar">
+      <div class="navigation-button">
+        <span><i class="fa fa-home fa-2x"></i><h3 class="menu-bar-text">Home</h3></span>
+      </div>
+    </div>
+    <div class="col-md-10 hub-body">
+      <div class="panel panel-special">
+        <div class="panel-heading clearfix">
+          <span class="ciq-panel-heading pull-left">Title</span>
+        </div>
+        <div class="panel-body" ng-show="!lifecollapsed" ng-switch on="lPanelStatus">
+          <p>Stuff goes here, appointment</p>
+          <hr>
+          <div class="progress-box">
+            <div id="button-container">
+              <div id="check-mark">
+                <span><i class="fa fa-check"></i></span>
+              </div>
+            </div>
+            <div class='progress-box-text'>Comprehensive Survey</div>
+          </div>
+          <p>Congratulations! You've completed the comprehensive questionnaire.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

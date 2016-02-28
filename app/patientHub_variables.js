@@ -1,0 +1,3 @@
+var LONG_SURVEY_HOST='';
+var PATIENT_INFO='';
+var SURVEY_TOKEN='';

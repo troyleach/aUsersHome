@@ -1,0 +1,71 @@
+<header class="top-header">
+  <div class="col-md-4 col-sm-4 mr-l"> <a href="javascript:void(0);" class="logo-mini"><img src="images/logo-mini.png" alt="Image" class="img-responsive" /></a> </div>
+  <!--col-md-4-->
+  <div class="col-md-5 col-sm-6 mr-r pull-right">
+    <div class="user-det"> <a href="javascript:void(0);"></a><br />
+      <div ng-controller="logoutCtrl">
+        <button class="btn-sm btn-warning" ng-click="logout()">Logout</button>
+      </div>
+    <!--user-det-->
+  </div>
+  <!--col-md-4-->
+  <div class="clearfix"></div>
+  <!--clearfix--> 
+</header>
+
+<!--top-header-->
+<div class="container-fluid">
+<div class="row">
+  <div class="container">
+    <div class="row wrapper wrapper-content">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content pledge">
+          <h2>We can help you take proactive steps to prevent cancer. Here's how:</h2>
+          <div class="col-md-12 col-sm-12 smais">
+            <section class="tasks-sec"> <!--<b>You Promise To...</b>--> <img src="images/pledge1.png" alt="Image" /> <span>
+              <h4>To fill out your profile, we will have you answer simple questions about your family history and health habits.</h4>
+              <p>Details about your family history and health habits will be key to understanding your cancer risk and to take proactive steps.</p>
+              </span>
+              <div class="clearfix"></div>
+              <!--clearfix--> 
+              <img src="images/pledge2.png" alt="Image" /> <span>
+               
+              <div class="clearfix"></div>
+              <!--clearfix--> 
+              <img src="images/pledge3.png" alt="Image" /> <span>
+              
+              </span>
+              <div class="clearfix"></div>
+              <!--clearfix--> 
+              <img src="images/pledge4.png" alt="Image" /> <span>
+              <h4> Your data belongs to you.</h4>
+              
+              <div class="clear"></div>
+              <div class="pull-left pl">
+                <label>
+                  <input checked type="checkbox" ng-model='policies' class="i-checks">
+                  &nbsp; </label>
+              </div>
+              </p>
+              </span>
+              <div class="clearfix"></div>
+              <!--clearfix--> 
+            </section>
+            <!--tasks-sec--> 
+          </div>
+          <!--col-md-12-->
+          <div class="clearfix"></div>
+          <!--clearfix-->
+          <center class='get-started-button'>
+              <div class="btn btn-success" ng-click="openSurvey()" ng-disabled="!policies">Get Started</div>
+          </center>
+          <div class="clearfix"></div>
+          <!--clearfix--> 
+        </div>
+      </div>
+    </div>
+    <!--container--> 
+  </div>
+  <!--row--> 
+</div>
+<!--container-fluid--> 

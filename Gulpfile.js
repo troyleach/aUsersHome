@@ -1,0 +1,31 @@
+'use strict';
+
+var gulp = require('gulp');
+var Server = require('karma').Server;
+
+require('require-dir')('./gulp');
+
+gulp.task('default', ['clean'], function() {
+    gulp.start('build');
+});
+
+/**
+ * Run test once and exit
+ */
+gulp.task('test', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
+
+/**
+ * Watch for file changes and re-run tests on each change
+ */
+gulp.task('tdd', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js'
+  }, done).start();
+});
+
+gulp.task('default', ['tdd']);

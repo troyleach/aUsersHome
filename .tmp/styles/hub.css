@@ -1,0 +1,96 @@
+#hub-container {
+  margin-top: -15px;
+  height: 100%;
+  width: 100%;
+}
+
+.hub-body {
+  float: right;
+  height: 100%;
+  width: 70%;
+  margin: 50px 108px;
+}
+
+.panel-special {
+  border-color: #6A6E87;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.panel-special > .panel-heading {
+  color: #FFF;
+  background-color: #6A6E87;
+  border-color: #353A57;
+  height: 60px;
+}
+
+/*progress box*/
+.progress-box {
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #363636;
+  width: 165px;
+  height: 165px;
+}
+
+/*check-box*/
+#button-container {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: #1E9980;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#check-mark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#check-mark span {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.progress-box-text {
+  font-size: 1em;
+  font-weight: 900;
+  position: relative;
+  top: 43%;
+  margin-left: 10px;
+}
+
+/*Menu bar*/
+.menu-bar {
+  color: #fff;
+  position: absolute;
+  background-color: #6A6E87;
+  height: 100%;
+  margin-left: 15px;
+}
+
+.navigation-button {
+  padding-top: 10px;
+}
+
+.menu-bar-text {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+/*# sourceMappingURL=hub.css.map */

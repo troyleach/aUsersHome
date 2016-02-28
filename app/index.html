@@ -1,0 +1,73 @@
+<!-- NOTE: Please don not delete any of the comments below -->
+<!doctype html>
+<html class="no-js" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title>patientHub</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/application.css" />
+        <link rel="stylesheet" href="styles/hub.css" />
+        <!-- endbuild -->
+
+        <!-- build:js scripts/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!-- View Place holder -->
+        <div ng-view=""></div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <!-- endbower -->
+        <!-- Auth0 Lock script and AngularJS module -->
+        <script src="//cdn.auth0.com/js/lock-7.12.min.js"></script>
+        <!-- angular-jwt and angular-storage -->
+        <script type="text/javascript" src="vendor/angular-storage/angular-storage.js"></script>
+        <script type="text/javascript" src="vendor/angular-jwt/angular-jwt.js"></script>
+        <script src="vendor/auth0-angular-4.js"> </script>
+        <!-- endbuild -->
+
+        <!-- Any include make it between the build comments below -->
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/mainApp.js"></script>
+        <script src="scripts/patientHub_variables.js"></script>
+        <script src="scripts/config/auth0.js"></script>
+        <!-- Controllers -->
+        <script src="scripts/controllers/patientHubController.js"></script>
+        <script src="scripts/controllers/pledgeController.js"></script>
+        <script src="scripts/controllers/introductionController.js"></script>
+        <script src="scripts/controllers/policyController.js"></script>
+        <script src="scripts/controllers/loginController.js"></script>
+        <script src="scripts/controllers/logoutController.js"></script>
+        <!-- Services -->
+        <script src="scripts/services/requestService.js"></script>
+        <!-- Directives -->
+        <script src="scripts/directives/sampleDirective.js"></script>
+        <!-- Filters -->
+        <script src="scripts/filters/sampleFilter.js"></script>
+        <!-- Utilities -->
+        <script src="scripts/utility/constant.js"></script>
+        <script src="scripts/utility/util.js"></script>
+        <!-- inject:partials -->
+        <!-- endinject -->
+        <!-- endbuild -->
+
+    </body>
+</html>
